@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofpXoDqPi6L+2Qvfl/JWI5P6p6bfaN4Q"
+     crossorigin="anonymous">
+
+    <title>Contact Us</title>
+</head>
+<body style="background-color:#e9edc9">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+</nav>
+<div id="header">
+    <h1>Digital Library</h1>
+</div>
+<!-- Contact Us Content -->
+<div class="container mt-4">
+    <h2>Contact Us</h2>
+
+    <div class="row mt-4">
+        <!-- Contact Information -->
+        <div class="col-md-6">
+            <h4>Our Location</h4>
+            <p>CSIT department, UET, Peshawer<br>Peshawer, pakisttan</p>
+
+            <h4>Contact Details</h4>
+            <p>Email: sahibzadaabdullah8@gmail.com<br>Phone: 03109674455</p>
+
+            <h4>Follow Us</h4>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" target="_blank">Facebook</a></li>
+                <li class="list-inline-item"><a href="#" target="_blank">Twitter</a></li>
+                <li class="list-inline-item"><a href="#" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-6">
+            <h4>Send us a Message</h4>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
+<script src="contact.js"></script>
+
+</body>
+</html>

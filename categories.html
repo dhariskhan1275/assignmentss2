@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Categories</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom styles here */
+        .card-category {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .card-category:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body style="background-color:#e9edc9">
+    <header class="bg-dark text-light p-3">
+        <div class="container">
+            <h1>Book Categories</h1>
+            <!-- Navigation links -->
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <!-- Filter options or search functionality -->
+        <div id="filter-options" class="mb-4">
+            <!-- Include your filter options or search input here -->
+            <input type="text" id="searchInput" class="form-control" placeholder="Search books...">
+            <button class="btn btn-primary mt-2" id="searchButton">Search</button>
+            <select class="form-select mt-2" id="filterBy">
+                <option value="category">Filter by Category</option>
+                <option value="title">Filter by Title</option>
+            </select>
+        </div>
+
+        <!-- Book categories display area -->
+        <div id="book-categories" class="row">
+            <!-- The fetched book details will be displayed here -->
+        </div>
+    </main>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="categories.js"></script>
+</body>
+</html>
